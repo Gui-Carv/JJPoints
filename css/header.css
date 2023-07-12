@@ -1,17 +1,18 @@
 header {
-    background-color: #000000;
-    padding: 25px;
+    background-color: black;
+    padding: 16px;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-a {
-    text-decoration: none;
-    color: #fff;
+header h1 {
+    font-size: 1.5rem;
+    font-weight: 500;
 }
 
 header nav a {
-    margin-right: 1.3em;
-    font-size: 1.5em;
+    color: white;
+    text-decoration: none;
+    margin-left: 12px;
 }
