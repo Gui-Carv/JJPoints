@@ -10,3 +10,7 @@ footer span {
   font-size: 0.8em;
   font-weight: 200;
 }
+
+footer a {
+  color: #005CC8;
+}
