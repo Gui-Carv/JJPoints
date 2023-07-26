@@ -1,15 +1,15 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JJPoints</title>
+    <title>luta</title>
     <!-- CSS LINKS -->
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/responsive.css">
     <!-- SCRIPT LINKS -->
     <script src="./script.js"></script>
@@ -22,7 +22,6 @@
 </head>
 
 <body>
-
     <header>
         <h1>JJPoints</h1>
         <nav>
@@ -38,21 +37,12 @@
     <main>
         <section>
             <article>
-                <h2>Desafie seus limites e conte seus pontos com JJPoints</h2>
+                <h2 id="timerDisplay">00:00</h2>
             </article>
-            <div class="form-container">
+            <div class="timer">
                 <form>
-                    <label for="user1">Lutador1:</label>
-                    <input type="text" id="user1" name="user1" required>
-
-                    <label for="user2">Lutador2:</label>
-                    <input type="text" id="user2" name="user2" required>
-                    
-                    <label for="time">Tempo de Luta:</label>
-                    <input type="range" id="time" name="time" min="1" max="10" value="5" step="1" oninput="updateTimeValue(this.value)">
-                    <output for="time" id="timeValue">5</output> minutos
-                    
-                    <button type="button" onclick="iniciarLuta()">Enviar</button>
+                    <button id="startPauseButton" onclick="startPauseTimer()">Iniciar</button>
+                    <button id="resetButton" onclick="resetTimer()">Reiniciar</button>
                 </form>
             </div>
         </section>
