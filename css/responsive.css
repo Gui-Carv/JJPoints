@@ -42,7 +42,7 @@ form input[type="text"] {
     border-radius: 4px;
 }
 
-form input[type="submit"] {
+form input[type="button"] {
     width: 100%;
     padding: 8px;
     background-color: crimson;
